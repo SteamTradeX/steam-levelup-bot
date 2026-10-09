@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "values": {
+    "bot.disabledCommands": [],
+    "currencies.tf2.enabled": true,
+    "rates.tf2.buy": 0,
+    "rates.tf2.sell": 0,
+    "stock.maxPerGame": 100,
+    "limits.maxSetsPerBuy": 500,
+    "limits.maxSetsPerSell": 500,
+    "limits.maxCustomerLevel": 6666,
+    "filters.rejectTradeBanned": true,
+    "filters.rejectVacBanned": false,
+    "filters.rejectLimitedAccounts": false,
+    "filters.minSteamLevel": 0,
+    "filters.allowTradeHolds": false,
+    "providers.steamTradeX.inventoryKey": "",
+    "providers.steamTradeX.listingKey": "",
+    "providers.steamTradeX.updateCatalog": true,
+    "bot.helpLeadLine": true
+  },
+  "help": {
+    "bot.disabledCommands": "Disabled commands. Commands the bot will not answer. Anything listed here replies that it is turned off rather than staying silent.",
+    "currencies.tf2.enabled": "Accept TF2 keys. Turn off to stop trading in keys without changing your rates.",
+    "rates.tf2.buy": "Sets you give for one key. How many card sets you hand over for one TF2 key. This is what a customer gets when they sell you a key.",
+    "rates.tf2.sell": "Sets you want for one key. How many card sets a customer must give you to receive one TF2 key. Keep this at or above the buy rate or you lose sets on every round trip.",
+    "stock.maxPerGame": "Most sets to hold per game. Once you hold this many sets of a game the bot stops buying more of it. Stops your stock filling up with one worthless game.",
+    "limits.maxSetsPerBuy": "Most sets a customer can buy at once. Caps a single trade. A customer wanting more simply makes a second one.",
+    "limits.maxSetsPerSell": "Most sets a customer can sell at once. Caps a single trade in the other direction.",
+    "limits.maxCustomerLevel": "Highest customer level to serve. Above this level a customer already owns most cards, so a trade would deliver very little. 0 removes the limit.",
+    "filters.rejectTradeBanned": "Refuse trade banned accounts. An account with a trade ban cannot complete a trade anyway.",
+    "filters.rejectVacBanned": "Refuse VAC banned accounts. A VAC ban is about cheating in a game and says nothing about whether someone can trade, so this is off by default.",
+    "filters.rejectLimitedAccounts": "Refuse limited accounts. A limited account has never spent money on Steam. They can still trade cards.",
+    "filters.minSteamLevel": "Lowest customer level to accept. Turns away brand new accounts. 0 accepts everyone.",
+    "filters.allowTradeHolds": "Trade with customers who have a hold. A trade hold means Steam keeps the items for up to 15 days before delivering them. Turning this on means waiting that long to receive what you bought.",
+    "providers.steamTradeX.inventoryKey": "SteamTradeX inventory API key. Our own inventory reading service, from your SteamTradeX dashboard under API. Optional.",
+    "providers.steamTradeX.listingKey": "SteamTradeX listing API key. Keeps your bot's stock and rates current on the SteamTradeX bot list. List the bot on steamtradex.com, then copy the API key from Edit Bot.",
+    "providers.steamTradeX.updateCatalog": "Send your stock list to SteamTradeX. Nothing is sent until the listing API key above is set.",
+    "bot.helpLeadLine": "Say who made the bot. Ends the !HELP list with one line saying this bot is the free SteamTradeX bot. Only in !HELP, never in a trade reply. Turn off to leave it out."
+  }
+}

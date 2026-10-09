@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": ["src/**/*.test.ts", "src/engine/fake-steam.ts", "src/steam/providers/fake-http.ts"]
+}

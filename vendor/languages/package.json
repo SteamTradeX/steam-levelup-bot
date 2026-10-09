@@ -1,0 +1,11 @@
+{
+  "name": "languages",
+  "version": "0.1.4",
+  "description": "SteamTradeX's own stand-in for the languages package: the language codes steam-tradeoffer-manager asks about, and the names Steam uses for them.",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "author": "SteamTradeX",
+  "license": "MIT"
+}

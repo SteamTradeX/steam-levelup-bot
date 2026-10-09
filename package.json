@@ -1,0 +1,53 @@
+{
+  "name": "steam-levelup-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Free, open-source Steam level up bot: sells and buys Steam trading card sets for TF2 keys, badge-aware, with verify-before-confirm trade safety. Node.js and TypeScript. By SteamTradeX.",
+  "keywords": [
+    "steam level up bot",
+    "steam card bot",
+    "tf2 keys",
+    "steam trading bot",
+    "badges",
+    "steam",
+    "steam-bot",
+    "steam-level-up",
+    "steam-trading-bot",
+    "steam-cards",
+    "card-sets",
+    "tf2-keys",
+    "trading-bot",
+    "nodejs",
+    "typescript"
+  ],
+  "homepage": "https://steamtradex.com",
+  "license": "MIT",
+  "author": "SteamTradeX",
+  "scripts": {
+    "init": "tsx --disable-warning=DEP0040 src/start.ts init",
+    "start": "tsx --disable-warning=DEP0040 src/start.ts start",
+    "test": "tsx --disable-warning=DEP0040 --test --test-force-exit \"src/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json",
+    "start:built": "node --disable-warning=DEP0040 dist/start.js start",
+    "publish-scan": "node scripts/publish-scan.mjs",
+    "test:scan": "node --test scripts/publish-scan.test.mjs"
+  },
+  "dependencies": {
+    "languages": "file:vendor/languages-0.1.4-stx.tgz",
+    "steam-totp": "^2.1.2",
+    "steam-tradeoffer-manager": "^2.13.0",
+    "steam-user": "^5.3.0",
+    "steamcommunity": "^3.50.3",
+    "steamid": "^2.1.0",
+    "tsx": "^4.20.6"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

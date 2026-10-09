@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.tsbuildinfo
+# The bot's own files: the Steam login, its saved sign in and its state.
+settings.json
+secrets.json
+state/
+*.maFile
+.env
+.env.*
