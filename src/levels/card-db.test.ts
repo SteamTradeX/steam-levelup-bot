@@ -270,15 +270,21 @@ test("lookups are spaced out rather than fired together", async () => {
  * or callers waiting together all go out together when the wait ends.
  */
 test("lookups asked for at the same time still go out one interval apart", async () => {
-  const at: number[] = [];
-  const source: SetSizeSource = { name: "t", async lookup() { at.push(Date.now()); return 5; } };
-  const database = new CardDatabase([source], new MemorySetSizeStore(), { minIntervalMs: 40 });
+  /* A clock that stands still while all four ask, so each caller's wait shows
+     the slot it booked. Measuring real times instead failed under load, when
+     one late timer brought two lookups close together. */
+  const waits: number[] = [];
+  let looked = 0;
+  const source: SetSizeSource = { name: "t", async lookup() { looked += 1; return 5; } };
+  const database = new CardDatabase([source], new MemorySetSizeStore(), {
+    minIntervalMs: 40,
+    now: () => 0,
+    sleep: async (ms) => { waits.push(ms); },
+  });
   await Promise.all([database.setSize(1), database.setSize(2), database.setSize(3), database.setSize(4)]);
-  at.sort((a, b) => a - b);
-  for (let i = 1; i < at.length; i += 1) {
-    // A little slack for timer rounding; together would be a gap of 0.
-    assert.ok((at[i] as number) - (at[i - 1] as number) >= 30, `gaps ${at.map((t) => t - (at[0] as number)).join(", ")}`);
-  }
+  assert.equal(looked, 4);
+  /* The first goes straight out; callers waiting together would share one wait. */
+  assert.deepEqual(waits.sort((a, b) => a - b), [40, 80, 120]);
 });
 
 /**
