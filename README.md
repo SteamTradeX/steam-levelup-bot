@@ -97,7 +97,7 @@ version below `v22` means an older Node.js was already installed: run
 ### 2. Download the bot
 
 ```bash
-git clone https://github.com/steamtradex/steam-levelup-bot.git && cd steam-levelup-bot && npm ci --omit=dev
+git clone https://github.com/SteamTradeX/steam-levelup-bot.git && cd steam-levelup-bot && npm ci --omit=dev
 ```
 
 **What you should see:** a line starting `added` with the number of
