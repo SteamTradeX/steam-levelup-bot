@@ -11,33 +11,31 @@ Linux server with Node.js 22.
 >
 > This free bot is the basics. The full bot adds a web dashboard, several
 > bots from one install, gems and more currencies, automatic pricing, profit
-> tracking, Telegram alerts and about eighty commands.
+> tracking, Telegram alerts and over sixty commands. It runs on your own
+> server, installed with one command, and is paid once: a lifetime licence
+> with lifetime updates.
 >
-> - **Hosted by us:** 1 TF2 key a month per bot, first month free on your first bot. Nothing to install.
-> - **Self-hosted:** the full bot and its dashboard on your own server, paid once.
->
-> [See pricing](https://steamtradex.com/pricing?utm_source=github&utm_medium=readme&utm_campaign=free-bot)
+> [The full bot](https://steamtradex.com/steam-level-up-bot-script?utm_source=github&utm_medium=readme&utm_campaign=free-bot)
 > &middot; [Try the live dashboard demo](https://steamtradex.com/bot-demo?utm_source=github&utm_medium=readme&utm_campaign=free-bot)
-> &middot; [Hosting](https://steamtradex.com/steam-bot-hosting?utm_source=github&utm_medium=readme&utm_campaign=free-bot)
-> &middot; [Self-hosted script](https://steamtradex.com/steam-level-up-bot-script?utm_source=github&utm_medium=readme&utm_campaign=free-bot)
+> &middot; [See pricing](https://steamtradex.com/pricing?utm_source=github&utm_medium=readme&utm_campaign=free-bot)
 
 ## Free vs full
 
-| | Free bot (this repo) | Full bot, hosted | Full bot, self-hosted |
-|---|---|---|---|
-| Price | Free, MIT | 1 TF2 key a month, first month free on your first bot | Paid once ([pricing](https://steamtradex.com/pricing?utm_source=github&utm_medium=readme&utm_campaign=free-bot)) |
-| Where it runs | Your server | Our servers | Your server |
-| Set up and change it | `settings.json`, then a restart | Web dashboard | Web dashboard, installed with one command |
-| Bots | One | As many as you like | Several from one install |
-| Customers pay in | TF2 keys | TF2 keys, gems and more | TF2 keys, gems and more |
-| Chat commands | 6 | About 80 | About 80 |
-| Automatic pricing | No | Yes | Yes |
-| Profit tracking | No | Yes | Yes |
-| Telegram alerts | No | Yes | Yes |
-| Owner commands in Steam chat | No | Yes | Yes |
-| Updates | `git pull` | Done for you | Automatic, rolls back by itself if an update fails |
-| Trade safety (below) | Yes | Yes | Yes |
-| SteamTradeX bot list and Inventory API | Yes | Yes | Yes |
+| | Free bot (this repo) | Full bot |
+|---|---|---|
+| Price | Free, MIT | Paid once: lifetime licence, lifetime updates ([pricing](https://steamtradex.com/pricing?utm_source=github&utm_medium=readme&utm_campaign=free-bot)) |
+| Where it runs | Your server | Your server |
+| Set up and change it | `settings.json`, then a restart | Web dashboard, installed with one command |
+| Bots | One | Several from one install |
+| Customers pay in | TF2 keys | TF2 keys, gems and more |
+| Chat commands | 6 | Over 60 |
+| Automatic pricing | No | Yes |
+| Profit tracking | No | Yes |
+| Telegram alerts | No | Yes |
+| Owner commands in Steam chat | No | Yes |
+| Updates | `git pull` | Automatic, rolls back by itself if an update fails |
+| Trade safety (below) | Yes | Yes |
+| SteamTradeX bot list and Inventory API | Yes | Yes |
 
 <!--
 Screenshots of the full version, taken from the live demo at 1280 pixels
@@ -344,8 +342,8 @@ for Linux.
 suite against an in-memory Steam. Nothing reaches the internet.
 
 **I want a dashboard / several bots / automatic prices.** That is the
-[full bot](https://steamtradex.com/pricing?utm_source=github&utm_medium=readme&utm_campaign=free-bot),
-hosted (first month free on your first bot) or on your own server.
+[full bot](https://steamtradex.com/steam-level-up-bot-script?utm_source=github&utm_medium=readme&utm_campaign=free-bot),
+on your own server, paid once.
 
 ## Licence
 
@@ -355,4 +353,4 @@ hosted (first month free on your first bot) or on your own server.
 
 ---
 
-Made by [SteamTradeX](https://steamtradex.com/?utm_source=github&utm_medium=readme&utm_campaign=free-bot): Steam bot hosting, the bot list and the Inventory API.
+Made by [SteamTradeX](https://steamtradex.com/?utm_source=github&utm_medium=readme&utm_campaign=free-bot): the Steam bot list, the full level up bot and the Inventory API.
