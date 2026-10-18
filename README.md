@@ -4,7 +4,8 @@ A free, open-source Steam level up bot. It sells Steam trading card sets for
 TF2 keys and buys them back, picks only sets each customer can still craft,
 and checks every trade offer item by item before it confirms it.
 
-One bot, six chat commands, one settings file. MIT licensed. Runs on any
+One bot, six chat commands, one settings file. MIT licensed, so you are free
+to use, change and share it. Runs on any
 Linux server with Node.js 22.
 
 > **Want more? The full SteamTradeX bot.**
